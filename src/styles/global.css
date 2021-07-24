@@ -8,3 +8,8 @@ body {
   background-color: #060b20;
   color: #fff;
 }
+
+.mail {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

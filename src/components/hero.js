@@ -1,4 +1,5 @@
 import React from "react"
+import { Mail } from "react-feather"
 
 const Hero = () => {
   return (
@@ -23,6 +24,10 @@ const Hero = () => {
       <button className="mt-10 bg-red-500 px-5 py-3 text-xl rounded hover:scale-105 transition ease-in-out duration-100 transform">
         Get In Touch
       </button>
+      {/* <span className="flex flex-row border-2">
+        <Mail />
+        <div>Hello</div>
+      </span> */}
     </>
   )
 }
