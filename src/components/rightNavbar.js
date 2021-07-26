@@ -1,5 +1,4 @@
 import React from "react"
-import { GitHub, Linkedin, Twitter } from "react-feather"
 
 const LeftNavbar = () => {
   return (
@@ -9,7 +8,7 @@ const LeftNavbar = () => {
           sharmamanish8301@gmail.com
         </a>
       </div>
-      <div className="w-0.5 h-28 bottom-0 mt-16 bg-gray-500"></div>
+      <div className="w-0.5 h-28 bottom-0 mt-10 bg-gray-500"></div>
     </div>
   )
 }

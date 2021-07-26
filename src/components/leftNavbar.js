@@ -1,4 +1,3 @@
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { GitHub, Linkedin, Twitter } from "react-feather"
 
@@ -16,7 +15,7 @@ const LeftNavbar = () => {
           <Twitter size={25} />
         </li>
       </ul>
-      <div className="w-0.5 h-28 mt-16 ml-2 bg-gray-500"></div>
+      <div className="w-0.5 h-28 mt-10 ml-2 bg-gray-500"></div>
     </div>
   )
 }

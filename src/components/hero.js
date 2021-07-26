@@ -5,11 +5,7 @@ const Hero = () => {
   return (
     <>
       <div className="text-2xl text-gray-300">
-        Hi{" "}
-        <span className="hover:rotate-45 transform transition duration-100 ease-out">
-          👋
-        </span>
-        , my name is
+        Hi <span>👋</span>, my name is
       </div>
       <div className="mt-5 text-7xl font-bold">Manish Sharma.</div>
       <div className="mt-6 text-7xl font-bold opacity-70">

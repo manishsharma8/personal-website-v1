@@ -1,8 +1,8 @@
 import React from "react"
 
-const Experince = () => {
+const Education = () => {
   return (
-    <section class="mt-52 text-white body-font overflow-hidden">
+    <section id="education" class="mt-52 text-white body-font overflow-hidden">
       <div className="text-4xl font-bold">Education</div>
       <div class="py-24 mx-auto">
         <div class="-my-8 divide-y-2 divide-gray-800">
@@ -63,4 +63,4 @@ const Experince = () => {
   )
 }
 
-export default Experince
+export default Education
