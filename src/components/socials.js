@@ -3,7 +3,7 @@ import { GitHub, Linkedin, Twitter } from "react-feather"
 
 const Socials = () => {
   return (
-    <div className="flex md:hidden gap-8 justify-center my-8">
+    <div className="flex lg::hidden gap-8 justify-center my-8">
       <span className="hover:text-red-500 cursor-pointer ease-in transition">
         <a
           target="_blank"
