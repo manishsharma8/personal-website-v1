@@ -26,7 +26,13 @@ const LeftNavbar = () => {
           </a>
         </li>
         <li className="hover:text-red-500 cursor-pointer ease-in transition">
-          <Twitter size={25} />
+          <Twitter
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/manish832001"
+            alt="twitter-link"
+            size={25}
+          />
         </li>
       </ul>
       <div className="w-0.5 h-28 mt-10 ml-2 bg-gray-500"></div>

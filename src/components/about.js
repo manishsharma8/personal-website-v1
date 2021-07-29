@@ -28,9 +28,9 @@ const About = () => {
           Few technologies I have been working with recently:
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-3 mt-5 md:mt-8 gap-3 text-gray-400">
-          {skills.map(skill => {
+          {skills.map((skill, i) => {
             return (
-              <div>
+              <div key={i}>
                 <span className="mr-2 text-red-500">▹</span>
                 {skill}
               </div>
@@ -38,13 +38,13 @@ const About = () => {
           })}
         </div>
       </div>
-      <div className="my-auto relative group">
+      <div className="m-auto relative group">
         <StaticImage
           placeholder="blurred"
-          className="my-auto w-64 h-64 rounded absolute z-10"
+          className="w-52 h-52 md:w-64 md:h-64 rounded absolute z-10"
           src="../images/profilepic.jpeg"
         />
-        <div className="border-4 border-red-500 w-64 h-64 absolute top-8 left-8 rounded hover:translate-x-2"></div>
+        <div className="border-4 border-red-500 w-52 h-52 md:w-64 md:h-64 absolute top-8 left-8 rounded hover:translate-x-2"></div>
       </div>
     </div>
   )

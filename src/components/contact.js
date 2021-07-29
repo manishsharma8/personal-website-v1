@@ -9,11 +9,14 @@ const Contact = () => {
         drop in to say Hi! Feel free to reach out, my inbox is always open.
       </p>
       <span className="mt-10 flex align-middle justify-center">
-        {/* <div className="flex px-2"> */}
-        <button className="text-lg md:text-2xl px-5 py-2 border-2 rounded hover:bg-red-500 hover:border-opacity-0 ease-in transition">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="mailto:sharmamanish8301@gmail.com"
+          className="text-lg md:text-2xl px-5 py-2 border-2 rounded hover:bg-red-500 hover:border-opacity-0 ease-in transition"
+        >
           Contact
-        </button>
-        {/* </div> */}
+        </a>
       </span>
     </section>
   )

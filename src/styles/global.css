@@ -9,6 +9,11 @@ body {
   color: #fff;
 }
 
+.backdrop {
+  height: 100%;
+  overflow: hidden;
+}
+
 .mail {
   writing-mode: vertical-rl;
   text-orientation: mixed;

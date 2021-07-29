@@ -1,19 +1,37 @@
-import React from "react"
-import { Link, animateScroll as scroll } from "react-scroll"
+import React, { useState } from "react"
+import { animateScroll as scroll, Link } from "react-scroll"
 import pdf from "../images/manish_sharma.pdf"
+import Hamburger from "./hamburger"
+import { Helmet } from "react-helmet"
 
 const navItems = ["About", "Education", "Work", "Contact"]
 
 const Navbar = () => {
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
+
+  const drawerToggleClickHandler = () => {
+    setSideDrawerOpen(!sideDrawerOpen)
+  }
+
+  const handleClickOutside = () => {
+    setSideDrawerOpen(false)
+  }
+
   return (
-    <section className="px-16 py-4 grid-cols-3 text-xl hidden lg:grid sticky top-0 bg-black z-20 border-b-2 border-gray-900">
+    <section className="px-16 py-4 grid grid-cols-2 md:grid-cols-3 text-xl sticky top-0 bg-black z-20 border-b-2 border-gray-900">
+      <Helmet>
+        <body className={sideDrawerOpen ? "backdrop" : ""} />
+      </Helmet>
       <div
         onClick={() => scroll.scrollToTop()}
+        onKeyDown={() => scroll.scrollTop()}
         className="logo animate-fade-in-down delay-1000 text-2xl cursor-pointer my-auto"
+        role="button"
+        tabIndex={0}
       >
         Manish Sharma
       </div>
-      <div className="text-white m-auto">
+      <div className="hidden md:block text-white m-auto">
         <ul className="flex">
           {navItems.map(item => {
             return (
@@ -32,15 +50,22 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className="ml-auto">
+      <div className="hidden md:flex md:ml-auto">
         <a
           target="_blank"
+          rel="noreferrer"
           href={pdf}
           className="border-2 rounded px-4 py-2 hover:bg-red-500 hover:border-opacity-0 transition duration-300 ease-in"
         >
           Resume
         </a>
       </div>
+      <Hamburger
+        handleClickOutside={handleClickOutside}
+        handleClick={drawerToggleClickHandler}
+        navItems={navItems}
+        open={sideDrawerOpen}
+      />
     </section>
   )
 }

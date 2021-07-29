@@ -21,6 +21,7 @@ const Projects = () => {
               <a
                 className="flex ml-auto"
                 target="_blank"
+                rel="noreferrer"
                 href="https://github.com/manishsharma8/Todo-App"
               >
                 <StaticImage
@@ -31,6 +32,7 @@ const Projects = () => {
               <a
                 className="flex"
                 target="_blank"
+                rel="noreferrer"
                 href="https://draggable-todo-list.netlify.app/"
               >
                 <ExternalLink className="my-auto w-7 h-7 mr-2" />
@@ -80,6 +82,7 @@ const Projects = () => {
               <a
                 className="flex ml-auto"
                 target="_blank"
+                rel="noreferrer"
                 href="https://github.com/manishsharma8/covid19-stats"
               >
                 <StaticImage
@@ -90,6 +93,7 @@ const Projects = () => {
               <a
                 className="flex"
                 target="_blank"
+                rel="noreferrer"
                 href="https://covid19-stats-overview.netlify.app/"
               >
                 <ExternalLink className="my-auto w-7 h-7 mr-2" />
