@@ -8,3 +8,6 @@
 <p align="center">
   A personal website built with Gatsby and hosted on Gatsby and hosted on Gatsbyjs Cloud
 </p>
+
+
+![demo](https://raw.githubusercontent.com/manishsharma8/Personal-Website/main/src/images/demo.png)
