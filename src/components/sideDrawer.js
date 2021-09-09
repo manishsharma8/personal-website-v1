@@ -13,20 +13,22 @@ const sideDrawer = props => {
       }`}
     >
       <ul className="px-20 py-28">
-        {props.navItems.map(item => {
+        {props.navItems.map((item, i) => {
           return (
-            <Link
-              to={`${item.toLowerCase()}`}
-              onClick={() => props.onLinkClick()}
-              spy
-              smooth
-              offset={-150}
-              duration={500}
-            >
-              <li className="animate-fade-in-down cursor-pointer mt-6 hover:text-red-500 transition ease-in">
-                {item}
-              </li>
-            </Link>
+            <li key={i}>
+              <Link
+                to={`${item.toLowerCase()}`}
+                onClick={() => props.onLinkClick()}
+                spy
+                smooth
+                offset={-150}
+                duration={500}
+              >
+                <div className="animate-fade-in-down cursor-pointer mt-6 hover:text-red-500 transition ease-in">
+                  {item}
+                </div>
+              </Link>
+            </li>
           )
         })}
         <div className="mt-10">

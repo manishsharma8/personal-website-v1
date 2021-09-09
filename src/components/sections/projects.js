@@ -34,14 +34,6 @@ const Projects = () => {
                   src="../images/icons8-github.svg"
                 />
               </a>
-              {/* <a
-                className="flex"
-                target="_blank"
-                rel="noreferrer"
-                href="https://covid19-stats-overview.netlify.app/"
-              >
-                <ExternalLink className="my-auto w-7 h-7 mr-2" />
-              </a> */}
             </div>
             <div className="flex flex-wrap gap-3">
               <div className="pt-1 px-3 rounded opacity-90 bg-blue-900 text-blue-200 font-bold align-middle">
@@ -150,8 +142,8 @@ const Projects = () => {
             </div>
             <div className="my-4 w-full h-0.5 rounded bg-gray-800"></div>
             <div className="mr-2 text-lg font-medium text-gray-400">
-              Simple Draggable Task Management App. Add some personality to your
-              task list with some emojis.
+              Simple Draggable Task Management App. Add personality to your task
+              list with some emojis.
             </div>
           </div>
         </div>

@@ -1,14 +1,11 @@
 import React from "react"
+import { email } from "../../utils/config"
 
 const Hero = () => {
   return (
     <>
       <div className="text-lg md:text-xl lg:text-2xl text-gray-300">
-        Hi{" "}
-        <span role="img" aria-label="Hi">
-          👋
-        </span>
-        , my name is
+        Hi 👋 , my name is
       </div>
       <div className="mt-5 text-4xl md:text-6xl lg:text-7xl font-bold">
         Manish Sharma,
@@ -24,7 +21,7 @@ const Hero = () => {
       <a
         target="_blank"
         rel="noreferrer"
-        href="mailto:sharmamanish8301@gmail.com"
+        href={`mailto:${email}`}
         className="inline-block mt-10 bg-red-500 px-5 py-3 text-lg md:text-xl rounded hover:scale-105 transition ease-in-out duration-100 transform"
       >
         Get In Touch

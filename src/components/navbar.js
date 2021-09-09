@@ -33,19 +33,21 @@ const Navbar = () => {
       </div>
       <div className="hidden md:block text-white m-auto">
         <ul className="flex">
-          {navItems.map(item => {
+          {navItems.map((item, i) => {
             return (
-              <Link
-                to={`${item.toLowerCase()}`}
-                spy
-                smooth
-                offset={-150}
-                duration={500}
-              >
-                <li className="animate-fade-in-down cursor-pointer mr-6 hover:text-red-500 transition ease-in">
-                  {item}
-                </li>
-              </Link>
+              <li key={i}>
+                <Link
+                  to={`${item.toLowerCase()}`}
+                  spy
+                  smooth
+                  offset={-150}
+                  duration={500}
+                >
+                  <div className="animate-fade-in-down cursor-pointer mr-6 hover:text-red-500 transition ease-in">
+                    {item}
+                  </div>
+                </Link>
+              </li>
             )
           })}
         </ul>

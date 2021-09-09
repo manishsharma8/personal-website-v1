@@ -1,4 +1,5 @@
 import React from "react"
+import { email } from "../../utils/config"
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="mailto:sharmamanish8301@gmail.com"
+          href={`mailto:${email}`}
           className="text-lg md:text-2xl px-5 py-2 border-2 rounded hover:bg-red-500 hover:border-opacity-0 ease-in transition"
         >
           Contact

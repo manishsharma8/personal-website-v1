@@ -1,39 +1,21 @@
 import React from "react"
-import { GitHub, Linkedin, Twitter } from "react-feather"
+import Icon from "./icons/icon"
+import { socialMedia } from "../utils/config"
 
 const LeftNavbar = () => {
   return (
     <section className="fixed left-16 bottom-0 hidden lg:block">
       <ul className="grid grid-rows-3 gap-9 text-gray-500">
-        <li className="hover:text-red-500 cursor-pointer ease-in transition">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/manishsharma8"
-            alt="github-link"
+        {socialMedia.map(({ name, url }, i) => (
+          <li
+            key={i}
+            className="hover:text-red-500 cursor-pointer ease-in transition"
           >
-            <GitHub size={25} />
-          </a>
-        </li>
-        <li className="hover:text-red-500 cursor-pointer ease-in transition">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/manish-sharma-472411182/"
-            alt="github-link"
-          >
-            <Linkedin size={25} />
-          </a>
-        </li>
-        <li className="hover:text-red-500 cursor-pointer ease-in transition">
-          <Twitter
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/manish832001"
-            alt="twitter-link"
-            size={25}
-          />
-        </li>
+            <a target="_blank" rel="noreferrer" href={url} alt={name}>
+              <Icon name={name} />
+            </a>
+          </li>
+        ))}
       </ul>
       <div className="w-0.5 h-28 mt-10 ml-2 bg-gray-500"></div>
     </section>
