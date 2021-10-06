@@ -4,6 +4,13 @@ import Redis from "./Redis"
 import Twitter from "./Twitter"
 import Github from "./Github"
 import Linkedin from "./Linkedin"
+import Graphql from "./Graphql"
+import Nextjs from "./Nextjs"
+import Postgresql from "./Postgresql"
+import Reactjs from "./Reactjs"
+import TailwindIcon from "./TailwindIcon"
+import Typescript from "./Typescript"
+import Redux from "./Redux"
 
 const IconSize = ({ size, children }) => {
   return (
@@ -37,6 +44,54 @@ const Icon = ({ name, size }) => {
       return (
         <IconSize size={size}>
           <Express />
+        </IconSize>
+      )
+    case "Reactjs":
+      return (
+        <IconSize size={size}>
+          <Reactjs />
+        </IconSize>
+      )
+    case "Typescript":
+      return (
+        <IconSize size={size}>
+          <Typescript />
+        </IconSize>
+      )
+    case "Graphql":
+      return (
+        <IconSize size={size}>
+          <Graphql />
+        </IconSize>
+      )
+    case "Nextjs":
+      return (
+        <IconSize size={size}>
+          <Nextjs />
+        </IconSize>
+      )
+    case "Postgresql":
+      return (
+        <IconSize size={size}>
+          <Postgresql />
+        </IconSize>
+      )
+    case "Tailwind":
+      return (
+        <IconSize size={size}>
+          <TailwindIcon />
+        </IconSize>
+      )
+    case "Redux":
+      return (
+        <IconSize size={size}>
+          <Redux />
+        </IconSize>
+      )
+    case "Redis":
+      return (
+        <IconSize size={size}>
+          <Redis />
         </IconSize>
       )
     default:
