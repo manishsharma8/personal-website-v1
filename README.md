@@ -6,7 +6,7 @@
 </a>
 
 <p align="center">
-  A personal website built with Gatsby and hosted on Gatsby and hosted on Gatsbyjs Cloud
+  A personal website built with Gatsby and hosted on Gatsbyjs Cloud
 </p>
 
 
