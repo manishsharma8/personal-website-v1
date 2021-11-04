@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-scroll"
-import pdf from "../images/manish_sharma.pdf"
+import pdf from "../images/Resume.pdf"
 
 const sideDrawer = props => {
   return (
