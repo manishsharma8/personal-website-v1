@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { animateScroll as scroll, Link } from "react-scroll"
-import pdf from "../images/manish_sharma.pdf"
+import pdf from "../images/Resume.pdf"
 import Hamburger from "./hamburger"
 import { Helmet } from "react-helmet"
 

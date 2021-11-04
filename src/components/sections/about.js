@@ -42,7 +42,7 @@ const About = () => {
         <StaticImage
           placeholder="blurred"
           className="w-52 h-52 md:w-64 md:h-64 rounded absolute z-10"
-          src="../images/profilepic.jpeg"
+          src="../../images/profilepic.jpeg"
           alt="profilepic"
         />
         <div className="border-4 border-red-500 w-52 h-52 md:w-64 md:h-64 absolute top-8 left-8 rounded hover:translate-x-2"></div>
