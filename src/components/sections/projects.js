@@ -36,7 +36,7 @@ const Projects = () => {
                   >
                     <StaticImage
                       className="ml-auto mr-3 my-auto w-8 h-8"
-                      src="../images/icons8-github.svg"
+                      src="../../images/icons8-github.svg"
                     />
                   </a>
                   {project.demo ? (
