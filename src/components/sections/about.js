@@ -38,14 +38,14 @@ const About = () => {
           })}
         </div>
       </div>
-      <div className="m-auto relative group">
+      <div className="relative group">
         <StaticImage
           placeholder="blurred"
-          className="w-52 h-52 md:w-64 md:h-64 rounded absolute z-10"
+          className="w-52 h-52 md:w-64 md:h-64 top-16 rounded absolute z-10"
           src="../../images/profilepic.jpeg"
           alt="profilepic"
         />
-        <div className="border-4 border-red-500 w-52 h-52 md:w-64 md:h-64 absolute top-8 left-8 rounded hover:translate-x-2"></div>
+        <div className="border-4 border-red-500 w-52 h-52 md:w-64 md:h-64 absolute top-24 left-8 rounded hover:translate-x-2"></div>
       </div>
     </div>
   )

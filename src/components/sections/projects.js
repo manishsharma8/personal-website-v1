@@ -16,7 +16,7 @@ const Projects = () => {
         </div>
         {projectsList.map(project => {
           return (
-            <div className="rounded border-2 border-gray-900 text-sm row-span-3">
+            <div className="rounded border-2 border-gray-900 text-sm row-span-2">
               <img
                 src={`${project.demoImage}.png`}
                 alt="A dog smiling in a party hat"

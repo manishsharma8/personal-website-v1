@@ -2,6 +2,7 @@ import React from "react"
 import Express from "./Express"
 import Redis from "./Redis"
 import Twitter from "./Twitter"
+import TwitterAPI from "./TwitterAPI"
 import Github from "./Github"
 import Linkedin from "./Linkedin"
 import Graphql from "./Graphql"
@@ -94,12 +95,14 @@ const Icon = ({ name, size }) => {
           <Redis />
         </IconSize>
       )
-    default:
+    case "Twitter Developer API":
       return (
         <IconSize size={size}>
-          <Redis />
+          <TwitterAPI />
         </IconSize>
       )
+    default:
+      return <IconSize size={size}>{/* <Redis /> */}</IconSize>
   }
 }
 

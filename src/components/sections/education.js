@@ -22,7 +22,7 @@ const Education = () => {
             <div className="md:flex-grow">
               <h2 className="text-2xl font-medium text-gray-100 title-font mb-2">
                 Bennett University
-                <span className="text-base ml-4">(Current CGPA: 8.44)</span>
+                <span className="text-base ml-4">(Current CGPA: 8.38)</span>
               </h2>
               <p className="leading-relaxed text-gray-400">
                 <span className="text-gray-300">Relevant coursework:</span>{" "}

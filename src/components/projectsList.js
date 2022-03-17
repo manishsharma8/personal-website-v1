@@ -1,5 +1,14 @@
 export const projectsList = [
   {
+    name: "Twella",
+    demoImage: "twella",
+    stack: ["Nextjs", "Tailwind", "Twitter Developer API"],
+    desc:
+      "Capture and share twitter posts as beautiful images. Utilized Twitter Developer API to fetch tweets and profile data through user entered tweet url",
+    github: "https://github.com/manishsharma8/Twella",
+    demo: "https://twella.herokuapp.com",
+  },
+  {
     name: "Pocket URL",
     demoImage: "pocket-url",
     stack: [
